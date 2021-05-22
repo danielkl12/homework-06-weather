@@ -1,0 +1,59 @@
+header {
+    color: white;
+    background-color: blue;
+    text-align: center;
+    flex: auto;
+    font-size: 70px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+
+.searchBtn {
+   background-color: blue;
+   border: 5px black;
+   border-radius: 5px; 
+   color: white;
+   width: 100px;
+   height: 25px;
+}
+
+.container {
+    flex-direction: column;
+    justify-content: left;
+    align-items: stretch  flex-start  flex-end;
+    flex: auto;
+    
+}
+
+.centerpage {
+    align-items: stretch;
+    flex: auto;
+
+}
+
+textarea {
+    margin-left: 300px;
+    width: 700px;
+    flex: auto;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.forecast {
+
+}
+
+.body {
+
+}
+
+.box {
+    border: 1px black solid;
+    height: 200px;
+    width: 600px;
+    margin-left: 300px;
+}
