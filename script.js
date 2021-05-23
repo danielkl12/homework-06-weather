@@ -1,5 +1,6 @@
 let container = document.getElementsByClassName('container');
 let searchButton = document.getElementsByClassName('#searchBtn');
+
 //let searchWeather = document.getElementById('#search-weather');
 
 //search button function
@@ -15,6 +16,9 @@ $(document).ready(function() {
         console.log(searchValue);
         coordinates(searchValue);
         return //coordinates(searchWeather);// pass searchInput here
+
+        
+
 
     })
 })
@@ -69,7 +73,9 @@ function searchWeather(coord) {
     //run function on click
     //searchButton.addEventListener('click', weather)  
     //display function here
-   
+    //history.push(searchWeather);
+    //window.localStorage.setItem("history",JSON.stringify(history));
+    //makeRow(searchWeather);
 
     
     //let coord = data[0];
@@ -84,9 +90,33 @@ function searchWeather(coord) {
         }
         ) 
         //display function here
+    function display(searchWeather) {
+        let card = $("<div>").addClass("card");
+        let wind = $("<p>").addClass("card-text").text("Wind Speed: " + data.wind.speed + " MPH");
+        let humidity = $("<p>").addClass("card-text").text("Humidity: " + data.main.humidity + " %");
+        
+        let temp = $("<p>").addClass("card-text").text("Temperature: " + data.main.temp + " °F");
+        let cardBody = $("<div>").addClass("card-body");
+        let img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + data.weather.icon + ".png");
     }
+     }
+
+
+
+
+
+      
+
+
+
+    
     //clear search
     //$("#today").empty();
+
+
+
+
+
 
 
 
